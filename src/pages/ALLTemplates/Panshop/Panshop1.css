@@ -1,0 +1,1027 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+#Panshop1 body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+  }
+  
+  #Panshop1  a {
+    text-decoration: none;
+    color: #ffb03b;
+  }
+  
+  #Panshop1  a:hover {
+    color: #ffc56e;
+    text-decoration: none;
+  }
+  
+  #Panshop1  h1,
+  #Panshop1  h2,
+  #Panshop1  h3,
+  #Panshop1  h4,
+  #Panshop1  h5,
+  #Panshop1  h6 {
+    font-family: "Satisfy", sans-serif;
+  }
+  
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+#Panshop1  #header {
+    top:0px;
+    position:sticky;
+    height: 70px;
+    z-index: 997;
+    transition: all 0.5s;
+    background: rgba(26, 24, 22, 0.85);
+  }
+  
+ #Panshop1  #header.header-transparent {
+    background: transparent;
+  }
+  
+ #Panshop1  #header.header-scrolled {
+    top: 0;
+    background: rgba(26, 24, 22, 0.85);
+  }
+  
+ #Panshop1  #header .logo h1 {
+    font-size: 28px;
+    margin: 0;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 3px;
+  }
+  
+ #Panshop1  #header .logo h1 a,
+ #Panshop1  #header .logo h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+ #Panshop1  #header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 40px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Book a table button Menu
+  --------------------------------------------------------------*/
+  #Panshop1 .book-a-table-btn {
+    background: #ffb03b;
+    color: #fff;
+    border-radius: 50px;
+    margin: 0 0 0 20px;
+    padding: 10px 25px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    white-space: nowrap;
+  }
+  
+  #Panshop1  .book-a-table-btn:hover {
+    background: #ffa012;
+    color: #fff;
+  }
+  
+  @media (max-width: 992px) {
+    #Panshop1  .book-a-table-btn {
+      margin: 0 15px 0 0;
+      padding: 8px 20px;
+      letter-spacing: 1px;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  /**
+  * Desktop Navigation 
+  */
+ #Panshop1  .navbar {
+    padding: 0;
+    
+  }
+  
+ #Panshop1  .navbar ul {
+    margin: 0;
+    padding: 0;
+   
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+  
+ #Panshop1  .navbar li {
+    position: relative;
+  }
+  
+ #Panshop1 .navbar a,
+ #Panshop1 .navbar a:focus {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0 10px 24px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+  
+ #Panshop1  .navbar a i,
+ #Panshop1  .navbar a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+  }
+  
+ #Panshop1  .navbar a:hover,
+ #Panshop1  .navbar .active,
+ #Panshop1  .navbar .active:focus,
+ #Panshop1  .navbar li:hover>a {
+    color: #ffb03b;
+  }
+  
+ #Panshop1  .navbar .dropdown ul {
+    display: block;
+    position: absolute;
+    left: 24px;
+    top: calc(100% + 30px);
+    margin: 0;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 0;
+    visibility: hidden;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+    transition: 0.3s;
+    border-radius: 4px;
+  }
+  
+ #Panshop1  .navbar .dropdown ul li {
+    min-width: 200px;
+  }
+  
+ #Panshop1  .navbar .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #433f39;
+  }
+  
+ #Panshop1  .navbar .dropdown ul a i {
+    font-size: 12px;
+  }
+  
+ #Panshop1  .navbar .dropdown ul a:hover,
+ #Panshop1  .navbar .dropdown ul .active:hover,
+ #Panshop1  .navbar .dropdown ul li:hover>a {
+    color: #ffb03b;
+  }
+  
+ #Panshop1  .navbar .dropdown:hover>ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+  
+ #Panshop1  .navbar .dropdown .dropdown ul {
+    top: 0;
+    left: calc(100% - 30px);
+    visibility: hidden;
+  }
+  
+ #Panshop1  .navbar .dropdown .dropdown:hover>ul {
+    opacity: 1;
+    top: 0;
+    left: 100%;
+    visibility: visible;
+  }
+  
+  @media (max-width: 1366px) {
+   #Panshop1  .navbar .dropdown .dropdown ul {
+      left: -90%;
+    }
+  
+   #Panshop1  .navbar .dropdown .dropdown:hover>ul {
+      left: -100%;
+    }
+  }
+  
+  /**
+  * Mobile Navigation 
+  */
+  #Panshop1  .mobile-nav-toggle {
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+    line-height: 0;
+    transition: 0.5s;
+  }
+  
+  @media (max-width: 991px) {
+    #Panshop1   .mobile-nav-toggle {
+      display: block;
+    }
+  
+   #Panshop1  .navbar ul {
+      display: none;
+    }
+  }
+  
+  #Panshop1  .navbar-mobile {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(39, 37, 34, 0.9);
+    transition: 0.3s;
+    z-index: 0;
+  }
+  
+  #Panshop1  .navbar-mobile .mobile-nav-toggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  #Panshop1 .navbar-mobile ul {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+    background-color: #fff;
+    overflow-y: auto;
+    transition: 0.3s;
+  }
+  
+  #Panshop1  .navbar-mobile a,
+  #Panshop1  .navbar-mobile a:focus {
+    padding: 10px 20px;
+    font-size: 15px;
+    color: #433f39;
+  }
+  
+  #Panshop1  .navbar-mobile a:hover,
+  #Panshop1  .navbar-mobile .active,
+  #Panshop1  .navbar-mobile li:hover>a {
+    color: #ffb03b;
+  }
+  
+  #Panshop1  .navbar-mobile .getstarted,
+  #Panshop1  .navbar-mobile .getstarted:focus {
+    margin: 15px;
+  }
+  
+  #Panshop1 .navbar-mobile .dropdown ul {
+    position: static;
+    display: none;
+    margin: 10px 20px;
+    padding: 10px 0;
+    z-index: 99;
+    opacity: 1;
+    visibility: visible;
+    background: #fff;
+    box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  }
+  
+  #Panshop1 .navbar-mobile .dropdown ul li {
+    min-width: 200px;
+  }
+  
+  #Panshop1 .navbar-mobile .dropdown ul a {
+    padding: 10px 20px;
+  }
+  
+  #Panshop1 .navbar-mobile .dropdown ul a i {
+    font-size: 12px;
+  }
+  
+  #Panshop1  .navbar-mobile .dropdown ul a:hover,
+  #Panshop1 .navbar-mobile .dropdown ul .active:hover,
+  #Panshop1 .navbar-mobile .dropdown ul li:hover>a {
+    color: #ffb03b;
+  }
+  
+  #Panshop1  .navbar-mobile .dropdown>.dropdown-active {
+    display: block;
+  }
+  
+  /*--------------------------------------------------------------
+  # Hero Section
+  --------------------------------------------------------------*/
+ #Panshop1  #hero {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(39, 37, 34, 0.8);
+    overflow: hidden;
+    padding: 0;
+  }
+  
+ #Panshop1  #hero .carousel-item {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+ #Panshop1  #hero .carousel-item::before {
+    content: "";
+    background-color: rgba(12, 11, 10, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+  }
+  
+ #Panshop1  #hero .carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+ #Panshop1  #hero .carousel-content {
+    text-align: center;
+  }
+  
+ #Panshop1  #hero h2 {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+ #Panshop1  #hero h2 span {
+    color: #ffb03b;
+  }
+  
+ #Panshop1  #hero p {
+    width: 80%;
+    -webkit-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+    margin: 0 auto 30px auto;
+    color: #fff;
+  }
+  
+ #Panshop1  #hero .carousel-inner .carousel-item {
+    transition-property: opacity;
+    background-position: center top;
+  }
+  
+ #Panshop1  #hero .carousel-inner .carousel-item,
+ #Panshop1  #hero .carousel-inner .active.carousel-item-start,
+ #Panshop1  #hero .carousel-inner .active.carousel-item-end {
+    opacity: 0;
+  }
+  
+ #Panshop1  #hero .carousel-inner .active,
+ #Panshop1  #hero .carousel-inner .carousel-item-next.carousel-item-start,
+ #Panshop1  #hero .carousel-inner .carousel-item-prev.carousel-item-end {
+    opacity: 1;
+    transition: 0.5s;
+  }
+  
+ #Panshop1  #hero .carousel-inner .carousel-item-next,
+ #Panshop1  #hero .carousel-inner .carousel-item-prev,
+ #Panshop1  #hero .carousel-inner .active.carousel-item-start,
+ #Panshop1  #hero .carousel-inner .active.carousel-item-end {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+  }
+  
+ #Panshop1  #hero .carousel-control-next-icon,
+ #Panshop1  #hero .carousel-control-prev-icon {
+    background: none;
+    font-size: 30px;
+    line-height: 0;
+    width: auto;
+    height: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    transition: 0.3s;
+    color: rgba(255, 255, 255, 0.5);
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+ #Panshop1  #hero .carousel-control-next-icon:hover,
+ #Panshop1  #hero .carousel-control-prev-icon:hover {
+    background: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+ #Panshop1  #hero .carousel-indicators li {
+    cursor: pointer;
+  }
+  
+ #Panshop1  #hero .btn-menu,
+ #Panshop1  #hero .btn-book {
+    font-weight: 600;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 0 10px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+    color: #fff;
+    border: 2px solid #ffb03b;
+  }
+  
+ #Panshop1  #hero .btn-menu:hover,
+ #Panshop1  #hero .btn-book:hover {
+    background: #ffb03b;
+    color: #fff;
+  }
+  
+  @media (max-width: 768px) {
+   #Panshop1  #hero h2 {
+      font-size: 28px;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+   #Panshop1  #hero p {
+      width: 50%;
+    }
+  
+   #Panshop1  #hero .carousel-control-prev,
+   #Panshop1  #hero .carousel-control-next {
+      width: 5%;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Sections General
+  --------------------------------------------------------------*/
+  #Panshop1  section {
+    padding: 60px 0;
+  }
+  
+  #Panshop1  .section-bg {
+    background-color: white;
+  }
+  
+  #Panshop1 .section-title {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  
+  #Panshop1  .section-title h2 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+    color: #5f5950;
+  }
+  
+  #Panshop1  .section-title h2 span {
+    color: #ffb03b;
+  }
+  
+  #Panshop1 .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 300;
+  }
+  
+  @media (min-width: 1024px) {
+    #Panshop1  .section-title p {
+      width: 50%;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # About
+  --------------------------------------------------------------*/
+ #Panshop1  .about {
+    background: #fffaf3;
+  }
+  
+ #Panshop1  .about .content {
+    padding: 0 80px;
+  }
+  
+ #Panshop1  .about .content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    color: #5f5950;
+  }
+  
+ #Panshop1  .about .content h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 5px;
+  }
+  
+ #Panshop1  .about .content p {
+    font-size: 15px;
+    color: #848484;
+  }
+  
+ #Panshop1  .about .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+ #Panshop1  .about .content ul li+li {
+    margin-top: 15px;
+  }
+  
+ #Panshop1  .about .content ul li {
+    position: relative;
+    padding-left: 26px;
+  }
+  
+ #Panshop1  .about .content ul i {
+    font-size: 20px;
+    color: #ffb03b;
+    position: absolute;
+    left: 0;
+    top: 2px;
+  }
+  
+ #Panshop1  .about .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+ #Panshop1  .about .video-box {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 400px;
+    position: relative;
+  }
+  
+ #Panshop1  .about .play-btn {
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#ffb03b 50%, rgba(255, 176, 59, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: absolute;
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
+    overflow: hidden;
+  }
+  
+ #Panshop1  .about .play-btn::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 100;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  
+ #Panshop1  .about .play-btn::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate-btn 2s;
+    animation: pulsate-btn 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+    opacity: 1;
+    border-radius: 50%;
+    border: 5px solid rgba(255, 176, 59, 0.7);
+    top: -15%;
+    left: -15%;
+    background: rgba(198, 16, 0, 0);
+  }
+  
+ #Panshop1  .about .play-btn:hover::after {
+    border-left: 15px solid #ffb03b;
+    transform: scale(20);
+  }
+  
+ #Panshop1  .about .play-btn:hover::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    -webkit-animation: none;
+    animation: none;
+    border-radius: 0;
+  }
+  
+  @media (max-width: 1024px) {
+  
+   #Panshop1  .about .content,
+   #Panshop1  .about .accordion-list {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  
+  @media (max-width: 992px) {
+   #Panshop1  .about .content {
+      padding-top: 30px;
+    }
+  
+   #Panshop1  .about .accordion-list {
+      padding-bottom: 30px;
+    }
+  }
+  
+  @-webkit-keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+  
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Whu Us
+  --------------------------------------------------------------*/
+ #Panshop1  .why-us .box {
+    padding: 50px 30px;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+    height: 100%;
+  }
+  
+ #Panshop1  .why-us .box span {
+    display: block;
+    font-size: 28px;
+    font-weight: 700;
+    color: #ffcf88;
+  }
+  
+ #Panshop1  .why-us .box h4 {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0;
+    margin: 20px 0;
+    color: #6c665c;
+  }
+  
+ #Panshop1  .why-us .box p {
+    color: #aaaaaa;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+  }
+  
+ #Panshop1  .why-us .box:hover {
+    background: #ffb03b;
+    padding: 30px 30px 70px 30px;
+    box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+  }
+  
+ #Panshop1  .why-us .box:hover span,
+ #Panshop1  .why-us .box:hover h4,
+ #Panshop1  .why-us .box:hover p {
+    color: #fff;
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Specials
+  --------------------------------------------------------------*/
+ #Panshop1  .specials {
+    overflow: hidden;
+  }
+  
+ #Panshop1  .specials .nav-tabs {
+    border: 0;
+  }
+  
+ #Panshop1  .specials .nav-link {
+    border: 0;
+    padding: 12px 15px 12px 0;
+    transition: 0.3s;
+    color: #433f39;
+    border-radius: 0;
+    border-right: 2px solid #e8e7e4;
+    font-weight: 600;
+    font-size: 15px;
+  }
+  
+ #Panshop1  .specials .nav-link:hover {
+    color: #ffb03b;
+  }
+  
+ #Panshop1  .specials .nav-link.active {
+    color: #ffb03b;
+    border-color: #ffb03b;
+  }
+  
+ #Panshop1  .specials .tab-pane.active {
+    -webkit-animation: fadeIn 0.5s ease-out;
+    animation: fadeIn 0.5s ease-out;
+  }
+  
+ #Panshop1  .specials .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #433f39;
+  }
+  
+ #Panshop1  .specials .details p {
+    color: #777777;
+  }
+  
+ #Panshop1  .specials .details p:last-child {
+    margin-bottom: 0;
+  }
+  
+  @media (max-width: 992px) {
+   #Panshop1  .specials .nav-link {
+      border: 0;
+      padding: 15px;
+    }
+  
+   #Panshop1  .specials .nav-link.active {
+      color: #fff;
+      background: #ffb03b;
+    }
+  }
+  
+  
+  /*--------------------------------------------------------------
+  # Gallery
+  --------------------------------------------------------------*/
+  #Panshop1  .gallery .gallery-item {
+    overflow: hidden;
+    border-right: 3px solid #454035;
+    border-bottom: 3px solid #454035;
+  }
+  
+  #Panshop1 .gallery .gallery-item img {
+    transition: all ease-in-out 0.4s;
+  }
+  
+  #Panshop1 .gallery .gallery-item:hover img {
+    transform: scale(1.1);
+  }
+  
+  
+  
+  /*--------------------------------------------------------------
+  # Contact
+  --------------------------------------------------------------*/
+ #Panshop1 .contact .info-wrap {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+  }
+  
+ #Panshop1 .contact .info {
+    background: #fff;
+  }
+  
+ #Panshop1 .contact .info i {
+    font-size: 20px;
+    color: #ffb03b;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #fff6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+ #Panshop1 .contact .info h4 {
+    padding: 0 0 0 60px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #433f39;
+    font-family: "Poppins", sans-serif;
+  }
+  
+ #Panshop1 .contact .info p {
+    padding: 0 0 0 60px;
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #7a7368;
+  }
+  
+ #Panshop1 .contact .info:hover i {
+    background: #ffb03b;
+    color: #fff;
+  }
+  
+ #Panshop1 .contact .php-email-form {
+    width: 100%;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    padding: 30px;
+    background: #fff;
+  }
+  
+ #Panshop1 .contact .php-email-form .form-group {
+    padding-bottom: 8px;
+  }
+  
+ #Panshop1 .contact .php-email-form .error-message {
+    display: none;
+    color: #fff;
+    background: #ed3c0d;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+ #Panshop1 .contact .php-email-form .sent-message {
+    display: none;
+    color: #fff;
+    background: #18d26e;
+    text-align: center;
+    padding: 15px;
+    font-weight: 600;
+  }
+  
+ #Panshop1 .contact .php-email-form .loading {
+    display: none;
+    background: #fff;
+    text-align: center;
+    padding: 15px;
+  }
+  
+ #Panshop1 .contact .php-email-form .loading:before {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    margin: 0 10px -6px 0;
+    border: 3px solid #18d26e;
+    border-top-color: #eee;
+    -webkit-animation: animate-loading 1s linear infinite;
+    animation: animate-loading 1s linear infinite;
+  }
+  
+ #Panshop1 .contact .php-email-form input,
+ #Panshop1 .contact .php-email-form textarea {
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+  }
+  
+ #Panshop1 .contact .php-email-form input {
+    height: 44px;
+  }
+  
+ #Panshop1 .contact .php-email-form textarea {
+    padding: 10px 12px;
+  }
+  
+ #Panshop1 .contact .php-email-form button[type=submit] {
+    background: #ffb03b;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+  }
+  
+ #Panshop1 .contact .php-email-form button[type=submit]:hover {
+    background: #ffa012;
+  }
+  
+  @-webkit-keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes animate-loading {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  /*--------------------------------------------------------------
+  # Footer
+  --------------------------------------------------------------*/
+ #Panshop1  #footer {
+    background: #35322d;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+ #Panshop1  #footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffb03b;
+    position: relative;
+    padding: 0;
+    margin: 0 0 15px 0;
+  }
+  
+ #Panshop1  #footer p {
+    font-size: 15;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+  }
+  
+ #Panshop1  #footer .social-links {
+    margin: 0 0 40px 0;
+  }
+  
+ #Panshop1  #footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: #46423b;
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  
+ #Panshop1  #footer .social-links a:hover {
+    background: #ffb03b;
+  }
+  
+ #Panshop1  #footer .copyright {
+    margin: 0 0 5px 0;
+  }
+  
+ #Panshop1  #footer .credits {
+    font-size: 13px;
+  }
